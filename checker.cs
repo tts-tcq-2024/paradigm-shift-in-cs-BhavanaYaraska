@@ -16,17 +16,26 @@ class Checker
             return chargeRate > 0.8;
         }
         
-        static bool BatteryIsOk(float temperature, float soc, float chargeRate) {
+        static bool BatteryIsOkWithTemperature(float temperature) {
             if (IsTemperatureOutOfRange(temperature)) {
                 Console.WriteLine("Temperature is out of range!");
                 return false;
             }
+            return true;
+        }
+        static bool BatteryIsOkWithSoc(float soc) {
+            
             
             if (IsSocOutOfRange(soc)) {
                 Console.WriteLine("State of Charge is out of range!");
                 return false;
             }
+           
             
+            return true;
+        }
+        static bool BatteryIsOkWithChargeRate(float chargeRate) {
+           
             if (IsChargeRateOutOfRange(chargeRate)) {
                 Console.WriteLine("Charge Rate is out of range!");
                 return false;

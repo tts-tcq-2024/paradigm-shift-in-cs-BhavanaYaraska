@@ -49,8 +49,12 @@ class Checker
         }
     }
     static int Main() {
-        ExpectTrue(batteryIsOk(25, 70, 0.7f));
-        ExpectFalse(batteryIsOk(50, 85, 0.0f));
+        ExpectTrue(BatteryIsOkWithTemperature(25));
+        ExpectTrue(BatteryIsOkWithSoc(70));
+        ExpectTrue(BatteryIsOkWithChargeRate(0.7f));
+        ExpectFalse(BatteryIsOkWithTemperature(50));
+        ExpectFalse(BatteryIsOkWithSoc(85));
+        ExpectFalse(BatteryIsOkWithChargeRate(0.0f));
         Console.WriteLine("All ok");
         return 0;
     }

@@ -52,10 +52,10 @@ class Checker
     static int Main() {
         ExpectTrue(BatteryIsOkWithTemperature(25));
         ExpectTrue(BatteryIsOkWithSoc(70));
-        ExpectTrue(BatteryIsOkWithChargeRate(0.7));
+        ExpectTrue(BatteryIsOkWithChargeRate(0.7f));
         ExpectFalse(BatteryIsOkWithTemperature(50));
         ExpectFalse(BatteryIsOkWithSoc(85));
-        ExpectFalse(BatteryIsOkWithChargeRate(0.0));
+        ExpectFalse(BatteryIsOkWithChargeRate(0.0f));
         Console.WriteLine("All ok");
         return 0;
     }

@@ -21,6 +21,7 @@ class Checker
             }
             return true;
         }
+       
         static bool BatteryIsOkWithSoc(float soc) {
             if (IsSocOutOfRange(soc)) {
                 Console.WriteLine("State of Charge is out of range!");

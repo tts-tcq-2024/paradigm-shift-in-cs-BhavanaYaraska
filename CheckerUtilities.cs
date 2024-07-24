@@ -1,3 +1,5 @@
+namespace paradigm_shift_csharp
+{
 partial class Checker
 {
     static (bool, bool) CheckRangeAndWarning(float value, float upperLimit, float warningTolerance)
@@ -24,4 +26,5 @@ partial class Checker
             // Environment.Exit(1);
         }
     }
+}
 }

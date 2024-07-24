@@ -1,3 +1,5 @@
+namespace paradigm_shift_csharp
+{
 partial class Checker
 {
     static (bool, bool) IsTemperatureOutOfRange(float temperature)
@@ -19,4 +21,5 @@ partial class Checker
         }
         return true;
     }
+}
 }

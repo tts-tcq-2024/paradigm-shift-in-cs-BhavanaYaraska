@@ -1,5 +1,6 @@
 using System;
-
+namespace paradigm_shift_csharp
+{
 partial class Checker
 {
     static readonly float TemperatureUpperLimit = 45;
@@ -22,4 +23,5 @@ partial class Checker
         Console.WriteLine("All ok");
         return 0;
     }
+}
 }

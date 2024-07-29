@@ -6,7 +6,6 @@ partial class Checker
     {
         return CheckRangeAndWarning(chargeRate, ChargeRateUpperLimit, ChargeRateWarningTolerance);
     }
-
     static bool BatteryIsOkWithChargeRate(float chargeRate)
     {
         var (isOutOfRange, isWarning) = IsChargeRateOutOfRange(chargeRate);

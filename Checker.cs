@@ -12,6 +12,7 @@ public class Checker
     static readonly float SocWarningTolerance = SocUpperLimit * 0.05f;
     static readonly float ChargeRateWarningTolerance = ChargeRateUpperLimit * 0.05f;
 
+    
     static int Main()
     {
         ExpectTrue(BatteryIsOkWithTemperature(25));

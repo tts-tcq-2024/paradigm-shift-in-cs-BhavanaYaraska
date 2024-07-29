@@ -6,7 +6,6 @@ partial class Checker
     {
         return CheckRangeAndWarning(soc, SocUpperLimit, SocWarningTolerance);
     }
-
     static bool BatteryIsOkWithSoc(float soc)
     {
         var (isOutOfRange, isWarning) = IsSocOutOfRange(soc);

@@ -1,6 +1,6 @@
 namespace paradigm_shift_csharp
 {
-public class Checker
+public class CheckerChargeRate
 {
     static (bool, bool) IsChargeRateOutOfRange(float chargeRate)
     {

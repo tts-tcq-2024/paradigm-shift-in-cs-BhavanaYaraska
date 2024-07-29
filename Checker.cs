@@ -1,7 +1,7 @@
 using System;
 namespace paradigm_shift_csharp
 {
-partial class Checker
+Public class Checker
 {
     static readonly float TemperatureUpperLimit = 45;
     static readonly float SocUpperLimit = 80;

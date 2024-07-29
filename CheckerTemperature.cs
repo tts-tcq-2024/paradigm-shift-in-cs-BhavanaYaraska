@@ -1,6 +1,6 @@
 namespace paradigm_shift_csharp
 {
-public class Checker
+public class CheckerTemperature
 {
     static (bool, bool) IsTemperatureOutOfRange(float temperature)
     {

@@ -1,6 +1,6 @@
 namespace paradigm_shift_csharp
 {
-public class Checker
+public class CheckerSoc
 {
     static (bool, bool) IsSocOutOfRange(float soc)
     {

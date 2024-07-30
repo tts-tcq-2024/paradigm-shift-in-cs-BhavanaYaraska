@@ -1,6 +1,6 @@
 namespace paradigm_shift_csharp
 {
-public class CheckerUtilities
+public static class CheckerUtilities
 {
     static (bool, bool) CheckRangeAndWarning(float value, float upperLimit, float warningTolerance)
     {

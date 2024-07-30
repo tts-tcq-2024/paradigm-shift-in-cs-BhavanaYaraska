@@ -2,6 +2,8 @@ namespace paradigm_shift_csharp
 {
 partial class CheckerChargeRate
 {
+     private const float ChargeRateUpperLimit = 2.0f;
+     private const float ChargeRateWarningTolerance = 0.5f;
     static (bool, bool) IsChargeRateOutOfRange(float chargeRate)
     {
         return CheckRangeAndWarning(chargeRate, ChargeRateUpperLimit, ChargeRateWarningTolerance);

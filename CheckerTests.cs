@@ -1,6 +1,5 @@
 using Xunit;
 using paradigm_shift_csharp; // Ensure this matches the namespace of your Checker class
-
 namespace ParadigmShiftTests
 {
     public class CheckerTests

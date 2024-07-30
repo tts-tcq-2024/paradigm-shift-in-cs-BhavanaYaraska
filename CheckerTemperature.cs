@@ -6,7 +6,7 @@ public class CheckerTemperature
         private const float TemperatureWarningTolerance = 5.0f;
     static (bool, bool) IsTemperatureOutOfRange(float temperature)
     {
-        return CheckRangeAndWarning(temperature, TemperatureUpperLimit, TemperatureWarningTolerance);
+        return CheckerUtilities.CheckRangeAndWarning(temperature, TemperatureUpperLimit, TemperatureWarningTolerance);
     }
 
     static bool BatteryIsOkWithTemperature(float temperature)

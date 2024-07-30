@@ -6,7 +6,7 @@ public class CheckerSoc
         private const float SocWarningTolerance = 10.0f;
     static (bool, bool) IsSocOutOfRange(float soc)
     {
-        return CheckRangeAndWarning(soc, SocUpperLimit, SocWarningTolerance);
+        return CheckerUtilities.CheckRangeAndWarning(soc, SocUpperLimit, SocWarningTolerance);
     }
     static bool BatteryIsOkWithSoc(float soc)
     {

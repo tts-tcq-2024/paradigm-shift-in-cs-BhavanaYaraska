@@ -1,6 +1,6 @@
 namespace paradigm_shift_csharp
 {
-public class CheckerTemperature
+public static class CheckerTemperature
 {
         private const float TemperatureUpperLimit = 45.0f;
         private const float TemperatureWarningTolerance = 5.0f;

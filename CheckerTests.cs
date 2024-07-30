@@ -11,8 +11,8 @@ namespace ParadigmShiftTests
         [InlineData(40, true, true)]   // Temperature approaching upper limit
         public void TestBatteryIsOkWithTemperature(float temperature, bool expectedIsOk, bool expectedWarning)
         {
-            var (isOutOfRange, isWarning) = Checker.IsTemperatureOutOfRange(temperature);
-            var result = Checker.BatteryIsOkWithTemperature(temperature);
+            var (isOutOfRange, isWarning) = CheckerTemperature.IsTemperatureOutOfRange(temperature);
+            var result = CheckerTemperature.BatteryIsOkWithTemperature(temperature);
             
             Assert.Equal(expectedIsOk, result);
             Assert.Equal(expectedWarning, isWarning);
@@ -24,8 +24,8 @@ namespace ParadigmShiftTests
         [InlineData(76, true, true)]   // SOC approaching upper limit
         public void TestBatteryIsOkWithSoc(float soc, bool expectedIsOk, bool expectedWarning)
         {
-            var (isOutOfRange, isWarning) = Checker.IsSocOutOfRange(soc);
-            var result = Checker.BatteryIsOkWithSoc(soc);
+            var (isOutOfRange, isWarning) = CheckerSoc.IsSocOutOfRange(soc);
+            var result = CheckerSoc.BatteryIsOkWithSoc(soc);
 
             Assert.Equal(expectedIsOk, result);
             Assert.Equal(expectedWarning, isWarning);
@@ -37,8 +37,8 @@ namespace ParadigmShiftTests
         [InlineData(0.76f, true, true)]   // Charge Rate approaching upper limit
         public void TestBatteryIsOkWithChargeRate(float chargeRate, bool expectedIsOk, bool expectedWarning)
         {
-            var (isOutOfRange, isWarning) = Checker.IsChargeRateOutOfRange(chargeRate);
-            var result = Checker.BatteryIsOkWithChargeRate(chargeRate);
+            var (isOutOfRange, isWarning) = CheckerChargeRate.IsChargeRateOutOfRange(chargeRate);
+            var result = CheckerChargeRate.BatteryIsOkWithChargeRate(chargeRate);
 
             Assert.Equal(expectedIsOk, result);
             Assert.Equal(expectedWarning, isWarning);

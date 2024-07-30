@@ -2,7 +2,7 @@ namespace paradigm_shift_csharp
 {
  public static class Checker
     {
-      public static  void Main(string[] args)
+      public static void Main(string[] args)
         {
             // Example inputs
             float temperature = 50.0f;

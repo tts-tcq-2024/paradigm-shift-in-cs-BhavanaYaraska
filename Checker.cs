@@ -15,8 +15,7 @@ namespace paradigm_shift_csharp
             Console.WriteLine($"- Temperature: {temperature}");
             Console.WriteLine($"- Out of Range: {tempIsOutOfRange}");
             Console.WriteLine($"- Warning: {tempIsWarning}");
-            Console.WriteLine($"- Battery Status OK:" {CheckerTemperature.BatteryIsOkWithTemperature(temperature)});
-
+            Console.WriteLine($"- Battery Status OK: {CheckerTemperature.BatteryIsOkWithTemperature(temperature)}");
             Console.WriteLine();
 
             // SOC Check
@@ -25,7 +24,7 @@ namespace paradigm_shift_csharp
             Console.WriteLine($"- SOC: {soc}");
             Console.WriteLine($"- Out of Range: {socIsOutOfRange}");
             Console.WriteLine($"- Warning: {socIsWarning}");
-            Console.WriteLine($"- Battery Status OK:" {CheckerSoc.BatteryIsOkWithSoc(soc)});
+            Console.WriteLine($"- Battery Status OK: {CheckerSoc.BatteryIsOkWithSoc(soc)}");
 
             Console.WriteLine();
 
@@ -35,8 +34,7 @@ namespace paradigm_shift_csharp
             Console.WriteLine($"- Charge Rate: {chargeRate}");
             Console.WriteLine($"- Out of Range: {chargeRateIsOutOfRange}");
             Console.WriteLine($"- Warning: {chargeRateIsWarning}");
-            Console.WriteLine($"- Battery Status OK:" {CheckerChargeRate.BatteryIsOkWithChargeRate(chargeRate)});
+            Console.WriteLine($"- Battery Status OK: {CheckerChargeRate.BatteryIsOkWithChargeRate(chargeRate)}");
         }  
-      
     }
 }

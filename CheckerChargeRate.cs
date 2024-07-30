@@ -4,6 +4,7 @@ public static class CheckerChargeRate
 {
      private const float ChargeRateUpperLimit = 2.0f;
      private const float ChargeRateWarningTolerance = 0.5f;
+     
    public static (bool, bool) IsChargeRateOutOfRange(float chargeRate)
     {
         return CheckerUtilities.CheckRangeAndWarning(chargeRate, ChargeRateUpperLimit, ChargeRateWarningTolerance);

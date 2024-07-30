@@ -4,11 +4,11 @@ public static class CheckerSoc
 {
         private const float SocUpperLimit = 80.0f;
         private const float SocWarningTolerance = 10.0f;
-    static (bool, bool) IsSocOutOfRange(float soc)
+    public static (bool, bool) IsSocOutOfRange(float soc)
     {
         return CheckerUtilities.CheckRangeAndWarning(soc, SocUpperLimit, SocWarningTolerance);
     }
-    static bool BatteryIsOkWithSoc(float soc)
+   public static bool BatteryIsOkWithSoc(float soc)
     {
         var (isOutOfRange, isWarning) = IsSocOutOfRange(soc);
         if (isOutOfRange)

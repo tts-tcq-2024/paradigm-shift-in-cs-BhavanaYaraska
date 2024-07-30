@@ -1,6 +1,6 @@
 namespace paradigm_shift_csharp
 {
-public class CheckerSoc
+public static class CheckerSoc
 {
         private const float SocUpperLimit = 80.0f;
         private const float SocWarningTolerance = 10.0f;

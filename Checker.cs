@@ -1,6 +1,6 @@
 namespace paradigm_shift_csharp
 {
-    public class Checker
+ public class Checker
     {
         // Constants
         private const float TemperatureUpperLimit = 45.0f;

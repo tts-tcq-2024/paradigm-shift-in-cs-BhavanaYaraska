@@ -2,6 +2,8 @@ namespace paradigm_shift_csharp
 {
 public class CheckerTemperature
 {
+        private const float TemperatureUpperLimit = 45.0f;
+        private const float TemperatureWarningTolerance = 5.0f;
     static (bool, bool) IsTemperatureOutOfRange(float temperature)
     {
         return CheckRangeAndWarning(temperature, TemperatureUpperLimit, TemperatureWarningTolerance);

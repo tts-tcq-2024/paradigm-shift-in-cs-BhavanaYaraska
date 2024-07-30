@@ -6,6 +6,7 @@
     <RootNamespace>paradigm_shift_csharp</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+<StartupObject>paradigm_shift_csharp.Checker</StartupObject>
   </PropertyGroup>
 
  <ItemGroup>

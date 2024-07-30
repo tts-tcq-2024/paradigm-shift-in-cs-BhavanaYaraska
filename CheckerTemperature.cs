@@ -4,6 +4,7 @@ public static class CheckerTemperature
 {
         private const float TemperatureUpperLimit = 45.0f;
         private const float TemperatureWarningTolerance = 5.0f;
+        
    public static (bool, bool) IsTemperatureOutOfRange(float temperature)
     {
         return CheckerUtilities.CheckRangeAndWarning(temperature, TemperatureUpperLimit, TemperatureWarningTolerance);

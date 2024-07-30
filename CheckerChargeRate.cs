@@ -6,7 +6,7 @@ partial class CheckerChargeRate
      private const float ChargeRateWarningTolerance = 0.5f;
     static (bool, bool) IsChargeRateOutOfRange(float chargeRate)
     {
-        return CheckRangeAndWarning(chargeRate, ChargeRateUpperLimit, ChargeRateWarningTolerance);
+        return CheckerUtilities.CheckRangeAndWarning(chargeRate, ChargeRateUpperLimit, ChargeRateWarningTolerance);
     }
     static bool BatteryIsOkWithChargeRate(float chargeRate)
     {

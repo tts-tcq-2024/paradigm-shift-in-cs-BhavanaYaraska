@@ -4,6 +4,7 @@ public static class CheckerSoc
 {
         private const float SocUpperLimit = 80.0f;
         private const float SocWarningTolerance = 10.0f;
+        
     public static (bool, bool) IsSocOutOfRange(float soc)
     {
         return CheckerUtilities.CheckRangeAndWarning(soc, SocUpperLimit, SocWarningTolerance);

@@ -1,6 +1,6 @@
 namespace paradigm_shift_csharp
 {
-partial class CheckerChargeRate
+public static class CheckerChargeRate
 {
      private const float ChargeRateUpperLimit = 2.0f;
      private const float ChargeRateWarningTolerance = 0.5f;
